@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/*
+	Theme Name: Portfolio
+	Theme URI: http://dejanvjestica.de
+	Author: Dejan Vjestica
+	Author URI:  http://dejanvjestica.de
+	Description: Dejan Vjestica Portfolio
+	Version: 0.1 alpha
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Tags: elegant, responsive, featured-images, custom-menu, custom-header
+*/
+
+.test{
+  height: 200px;
+  width: 500px;
+  background-color: red;
+}
