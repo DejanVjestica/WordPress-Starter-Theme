@@ -1,2 +1,2 @@
 # WordPress-Starter-Theme
-# Clean WordPress Theme directory
+Clean WordPress Theme directory
