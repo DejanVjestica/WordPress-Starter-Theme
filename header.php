@@ -10,4 +10,8 @@
         <?php wp_head(); ?>
     </head>
     <body>
-      header
+    <header>
+      
+      <div id="banner" class="row" style="background-image: url(<?php echo get_background_image();?>);">test
+      </div>
+    </header>
