@@ -4,10 +4,13 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import "compass/css3";
 @import "compass/reset";
+// @import "compass/layout";
 
 // Modules
-@import "modules/_colors.scss";
-@import "modules/_typography-scss";
+@import "modules/colors.scss";
+@import "modules/typography.scss";
 
 // Partials
-@import "partials/_base.scss";
+@import "partials/base.scss";
+
+// @include sticky-footer(54px, "heder", "#1", "#footer");

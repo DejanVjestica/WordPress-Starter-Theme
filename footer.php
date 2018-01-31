@@ -1,6 +1,6 @@
-<div class="" style="background-image:red;" width:100px; height:100px;>
-footer
-</div>
+<footer id="footer">
+<h2 id="1">footer</h2>
+</footer>
 <?php wp_footer(); ?>
 </body>
 </html>
