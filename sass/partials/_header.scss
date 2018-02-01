@@ -1,0 +1,25 @@
+// header
+header{
+  .menubar{
+    height: 60px;
+    @include display-flex(flex);
+    @include align-items(center);
+  }
+}
+// banner
+#banner{
+  color: $white;
+  background-size: cover;
+  padding: 60px 0;
+  max-width: 100%;
+  height: auto;
+  h1{
+    margin-bottom: 0.5em;
+  }
+  p{
+    margin-bottom: 1em;
+  }
+  button{
+    @extend %button-standard;
+  }
+}

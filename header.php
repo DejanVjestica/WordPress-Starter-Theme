@@ -11,20 +11,20 @@
   <?php wp_head(); ?>
 </head>
 <body>
-  <header>
-    <a id="logo" class="" href="<?php bloginfo('url'); ?>">
-      <?php echo bloginfo(); ?>
-    </a>
-    <nav>
+  <header class="wrapper">
+    <article class="menubar">
+      <a id="logo" href="<?php bloginfo('url'); ?>"><h3><?php echo bloginfo(); ?></h3></a>
+      <nav></nav>
+    </article>
 
-    </nav>
   </header>
   <!-- banner should display only on front page -->
   <section id="banner" class="" style="background-image: url(<?php echo get_background_image();?>);">
     <div class="wrapper">
       <h1>Front-end Web Developer</h1></h1>
-      <p>If you want to get in touch whit me, please write me a email at dvjestica@gmail.com or simply use a contact form below.
+      <p>If you want to get in touch whit me, please write me a email at dvjestica@gmail.com. <br>
         I’m locking for a full time emploiment in Berlin, Deutscland
       </p>
+      <button type="button" name="button">Contact me</button>
     </div>
   </section>

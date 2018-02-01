@@ -8,6 +8,10 @@ body{
   }
   p{
     font-size: 1em;
+    line-height: 140%;
+  }
+  h3{
+    font-size: 1.5em;
   }
   h1{
     font-size: 3em;
@@ -19,18 +23,12 @@ body{
     max-width: 100%;
   }
 }
-// header
-header{
-  height: 80px;
+// wraper responsive
+.wrapper{
+  width: 90%;
+  margin: auto;
 }
-// banner
-#banner{
-  color: $white;
-  background-size: cover;
 
-  max-width: 100%;
-  height: auto;
-}
 // footer
 footer{
 

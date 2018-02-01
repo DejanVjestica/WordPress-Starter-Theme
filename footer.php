@@ -1,5 +1,8 @@
 <footer id="footer">
-<h2 id="1">footer</h2>
+  <article class="wrapper">
+    <h2 id="1">footer</h2>
+  </article>
+
 </footer>
 <?php wp_footer(); ?>
 </body>

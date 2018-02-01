@@ -10,7 +10,9 @@
 @import "modules/colors.scss";
 @import "modules/typography.scss";
 
+// Components
+@import "components/buttons.scss";
+
 // Partials
 @import "partials/base.scss";
-
-// @include sticky-footer(54px, "heder", "#1", "#footer");
+@import "partials/header.scss";
