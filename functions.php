@@ -43,12 +43,25 @@ add_theme_support('post-formats', array('aside','image','video'));
 	Sidebar function
 	================================
 */
+// Header message
 function dejan_widget_setup(){
 	register_sidebar(
 		array(
-			'name' => 'search',
-			'id' => 'search-1',
-			'class' => '',
+			'name' => 'header-msg',
+			'id' => 'header-msg',
+			'class' => 'widget',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h1>',
+			'after_title' => '</h2>',
+		)
+	);
+	// Skills
+	register_sidebar(
+		array(
+			'name' => 'skills',
+			'id' => 'skills',
+			'class' => 'widget',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
 			'before_title' => '<h1>',
@@ -77,3 +90,12 @@ function wpdocs_custom_excerpt_length( $length ) {
     return 35;
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more');
+
+
+// removes default gallery styles
+add_filter( 'use_default_gallery_style', '__return_false' );
+
+// removes all HTML tags from all post tag links
+add_filter('term_links-post_tag', function($links) {
+    return array_map('wp_strip_all_tags', $links);
+});

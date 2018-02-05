@@ -1,0 +1,43 @@
+// Front page styles
+#front-page{
+  article{
+    margin-bottom:3em;
+    @include display-flex(flex);
+    @include flex-direction(column);
+    @include tablet-min{
+      @include flex-direction(row);
+    }
+    &:first-child{}
+    & > *{
+      @include flex-grow(1);
+    }
+    figure{
+      margin-bottom: 1em;
+      @include tablet-min{
+        width: 50%;
+        height: auto;
+      }
+
+      img{
+        height: auto;
+      }
+    }
+    aside{
+      @include tablet-min{
+        width: 40%;
+      }
+
+      h2{
+        color:$red;
+      }
+      p{
+        padding: 0.5em 0;
+      }
+      ul{
+        li{
+          @extend %tag-styles;
+        }
+      }
+    }
+  }
+}

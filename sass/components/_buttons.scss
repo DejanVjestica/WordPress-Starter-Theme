@@ -6,9 +6,16 @@
   font-size: 1.5em;
   color: $white;
   padding: 0.5em 2em;
-
+  &:hover{
+    background-color: $red;
+  }
 
 }
-%button-standard:hover{
+%tag-styles{
+  display: inline-block;
   background-color: $red;
+  color:$white;
+  padding: 0.5em 1em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
 }
