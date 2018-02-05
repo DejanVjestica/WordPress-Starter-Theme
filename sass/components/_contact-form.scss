@@ -1,0 +1,66 @@
+// Contact form
+#sidebar-contact{
+  background-color: $lightgrey;
+  color: $white;
+  padding: 2em 0;
+  form{
+    @include display-flex(flex);
+    @include flex-flow(wrap);
+    // This element is a glitch
+    #wpform-field-hp{
+      display: none;
+    }
+    .wpforms-description{
+      margin-bottom: 2em;
+    }
+    .wpforms-field-container{
+      width: 100%;
+      @include tablet-min{
+        @include display-flex(flex);
+        @include flex-flow(wrap);
+        & > *{
+          @include flex-grow(1);
+        }
+        #wpforms-44-field_0-container{
+          margin-right: 1em;
+        }
+        #wpforms-44-field_3-container{
+          @include flex-basis(100%);
+        }
+      }
+      @include desktop{
+        #wpforms-44-field_1-container{
+          @include flex-grow(2);
+        }
+      }
+    }
+    label, input, textarea{
+      width: 100%;
+      display: block;
+      border: none;
+    }
+    label{
+      margin-bottom: 0.5em;
+    }
+    input{
+      margin-bottom: 1em;
+      height: 3em;
+    }
+    textarea{
+      margin-bottom: 2em;
+      height: 8em;
+    }
+    .wpforms-submit-container{
+      width: 100%;
+      button{
+        width: 100%;
+        display: block;
+        background-color: $red;
+        border: none;
+        color: $white;
+        font-size: 1em;
+        padding: 1em;
+      }
+    }
+  }
+}

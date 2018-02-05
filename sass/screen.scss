@@ -4,18 +4,16 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import "compass/css3";
 @import "compass/reset";
-// @import "compass/layout";
 
-// Modules
+
+@import "partials/mixins.scss";
 @import "modules/colors.scss";
 @import "modules/typography.scss";
-
-// Components
 @import "components/buttons.scss";
 
-// Partials
-@import "partials/mixins.scss";
 @import "partials/base.scss";
 @import "partials/header.scss";
 @import "partials/front-page.scss";
 @import "partials/footer.scss";
+
+@import "components/contact-form.scss";

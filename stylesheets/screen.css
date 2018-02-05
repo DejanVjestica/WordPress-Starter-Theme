@@ -277,3 +277,135 @@ footer {
   background-color: #383838;
   color: white;
 }
+/* line 7, ../sass/partials/_footer.scss */
+footer #widget-footer {
+  padding: 2em 0;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 11, ../sass/partials/_footer.scss */
+footer #widget-footer > * {
+  -webkit-flex: 1;
+  flex: 1;
+}
+/* line 16, ../sass/partials/_footer.scss */
+footer #widget-footer .about {
+  -webkit-flex: 2;
+  flex: 2;
+  margin-right: 2em;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 20, ../sass/partials/_footer.scss */
+footer #widget-footer .about img {
+  margin-right: 1em;
+}
+/* line 26, ../sass/partials/_footer.scss */
+footer #widget-footer #grouped-fields .custom-filds {
+  margin-bottom: 1em;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 29, ../sass/partials/_footer.scss */
+footer #widget-footer #grouped-fields .custom-filds img {
+  margin-right: 1em;
+}
+/* line 37, ../sass/partials/_footer.scss */
+footer #widget-footer #nav_menu-2 li {
+  margin-bottom: 1em;
+}
+/* line 40, ../sass/partials/_footer.scss */
+footer #widget-footer #nav_menu-2 a {
+  padding: 0.5em 1em;
+  color: white;
+}
+
+/* line 2, ../sass/components/_contact-form.scss */
+#sidebar-contact {
+  background-color: #535353;
+  color: white;
+  padding: 2em 0;
+}
+/* line 6, ../sass/components/_contact-form.scss */
+#sidebar-contact form {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  flex-flow: wrap;
+}
+/* line 10, ../sass/components/_contact-form.scss */
+#sidebar-contact form #wpform-field-hp {
+  display: none;
+}
+/* line 13, ../sass/components/_contact-form.scss */
+#sidebar-contact form .wpforms-description {
+  margin-bottom: 2em;
+}
+/* line 16, ../sass/components/_contact-form.scss */
+#sidebar-contact form .wpforms-field-container {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 16, ../sass/components/_contact-form.scss */
+  #sidebar-contact form .wpforms-field-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: wrap;
+    flex-flow: wrap;
+  }
+  /* line 21, ../sass/components/_contact-form.scss */
+  #sidebar-contact form .wpforms-field-container > * {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+  }
+  /* line 24, ../sass/components/_contact-form.scss */
+  #sidebar-contact form .wpforms-field-container #wpforms-44-field_0-container {
+    margin-right: 1em;
+  }
+  /* line 27, ../sass/components/_contact-form.scss */
+  #sidebar-contact form .wpforms-field-container #wpforms-44-field_3-container {
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 32, ../sass/components/_contact-form.scss */
+  #sidebar-contact form .wpforms-field-container #wpforms-44-field_1-container {
+    -webkit-flex-grow: 2;
+    flex-grow: 2;
+  }
+}
+/* line 37, ../sass/components/_contact-form.scss */
+#sidebar-contact form label, #sidebar-contact form input, #sidebar-contact form textarea {
+  width: 100%;
+  display: block;
+  border: none;
+}
+/* line 42, ../sass/components/_contact-form.scss */
+#sidebar-contact form label {
+  margin-bottom: 0.5em;
+}
+/* line 45, ../sass/components/_contact-form.scss */
+#sidebar-contact form input {
+  margin-bottom: 1em;
+  height: 3em;
+}
+/* line 49, ../sass/components/_contact-form.scss */
+#sidebar-contact form textarea {
+  margin-bottom: 2em;
+  height: 8em;
+}
+/* line 53, ../sass/components/_contact-form.scss */
+#sidebar-contact form .wpforms-submit-container {
+  width: 100%;
+}
+/* line 55, ../sass/components/_contact-form.scss */
+#sidebar-contact form .wpforms-submit-container button {
+  width: 100%;
+  display: block;
+  background-color: #c23a2c;
+  border: none;
+  color: white;
+  font-size: 1em;
+  padding: 1em;
+}

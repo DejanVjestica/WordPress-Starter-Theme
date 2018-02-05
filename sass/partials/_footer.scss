@@ -1,7 +1,46 @@
 // footer
 footer{
   width: 100%;
-  
   background-color: $darkgrey;
   color:$white;
+
+  #widget-footer{
+    padding: 2em 0;
+    	@include display-flex(flex);
+
+      & > * {
+        @include flex(1);
+        // @include align-items(center);
+
+      }
+      .about{
+        @include flex(2);
+        margin-right: 2em;
+        @include display-flex(flex);
+        img{
+          margin-right: 1em;
+        }
+      }
+
+      #grouped-fields{
+        .custom-filds{
+          margin-bottom: 1em;
+          @include display-flex(flex);
+          img{
+            margin-right: 1em;
+          }
+        }
+
+      }
+
+      #nav_menu-2{
+        li{
+          margin-bottom: 1em;
+        }
+        a{
+          padding: 0.5em 1em;
+          color: $white;
+        }
+      }
+  }
 }

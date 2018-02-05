@@ -52,7 +52,7 @@ function dejan_widget_setup(){
 			'class' => 'widget',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h1>',
+			'before_title' => '<h2>',
 			'after_title' => '</h2>',
 		)
 	);
@@ -64,11 +64,34 @@ function dejan_widget_setup(){
 			'class' => 'widget',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h1>',
+			'before_title' => '<h2>',
 			'after_title' => '</h2>',
 		)
 	);
-
+	// contact form
+	register_sidebar(
+		array(
+			'name' => 'contact-form',
+			'id' => 'contact-form',
+			'class' => 'widget',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h2>',
+			'after_title' => '</h2>',
+		)
+	);
+	// contact form
+	register_sidebar(
+		array(
+			'name' => 'footer',
+			'id' => 'footer',
+			'class' => 'widget',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h2>',
+			'after_title' => '</h2>',
+		)
+	);
 }
 add_action('widgets_init','dejan_widget_setup');
 /*
